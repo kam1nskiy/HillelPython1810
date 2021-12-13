@@ -1,0 +1,77 @@
+/* Верхний блок */
+header, img {
+    padding-bottom: 1.5em;
+}
+
+main{
+    padding-bottom: 5em;
+}
+
+h1{
+    padding-bottom: 0.5em;
+}
+
+/* Нижний блок */
+footer {
+    position: fixed;
+    left: 0; bottom: 0;
+    width: 100%;
+    background: #333;
+    padding: 10px 0;
+    color: #fff;
+    clear: left;
+    text-align: center;
+}
+
+a.nav-link:hover {
+    color: blue;
+    text-shadow: #cad5e2 1px 1px 0,
+                 #cad5e2 -1px -1px 0,
+                 #cad5e2 -1px 1px 0,
+                 #cad5e2 1px -1px 0;
+}
+
+a.not-active {
+    pointer-events: none;
+    cursor: default;
+    text-shadow: #cad5e2 1px 1px 0,
+                 #cad5e2 -1px -1px 0,
+                 #cad5e2 -1px 1px 0,
+                 #cad5e2 1px -1px 0;
+}
+
+/*
+.table-striped > tbody > tr:nth-child(odd) > td,
+.table-striped > tbody > tr:nth-child(odd) > th {
+    background-color: #76b5f0;
+}
+
+.table-striped > tbody > tr:nth-child(even) > td,
+.table-striped > tbody > tr:nth-child(even) > th {
+    background-color: #5fabf1;
+}
+*/
+
+.table .thead-dark th {
+    color: #fff;
+    background-color: #0080c0;
+}
+
+.table tbody, .table tbody tr th, .table .thead-dark th {
+    text-align: center;
+    font-weight: 400;
+}
+
+.group_button {
+    float:right;
+}
+
+.group_button .btn {
+    margin-bottom:5px;
+}
+
+.mean_container {
+    max-height: 700px;
+    overflow: scroll;
+    overflow-x: hidden;
+}

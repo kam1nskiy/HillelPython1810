@@ -1,0 +1,36 @@
+{% extends 'base/default_page.html' %}
+{% block meta %}
+	<meta name="keywords" content="Page Not Found, страница не найдена" />
+	<meta name="description" content="Page Not Found" />
+{% endblock meta %}
+{% block title %}
+	{{ "Page Not Found" | capitalize | escape | trim }}
+{% endblock title %}
+{% block nav_links %}
+	<div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+		<ul class="navbar-nav">
+			<li class="nav-item">
+				<a class="nav-link text-white" href='/index/' title="Перейти на главную">{{ "Главная" | trim }}</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link text-white" href='/about/' title="Перейти на страницу о Васе">{{ "О Васе Пупкине" | trim }}</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link text-white" href='/contact/' title="Перейти на страницу Связаться с Васей">{{ "Связаться с Василием" | trim }}</a>
+			</li>
+		</ul>
+	</div>
+{% endblock nav_links %}
+{% block h1 %}
+	{{ "Page Not Found" | escape | trim | upper }}
+{% endblock h1 %}
+{% block content %}
+	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+		<h3>{{ "Чувак, ты допустил ошибку при вводе URL !" | trim }}</h3>
+		<p>{{ "То, что ты искал, просто не существует." | trim }}</p>
+  		<p><a href="/index/">{{ "Перейти на главную :)" | trim }}</a></p>
+	</div>
+{% endblock content %}
+{% block footer %}
+	{{ "Василий Пупкин 2020-2021" | escape | trim }}&nbsp;&copy;
+{% endblock footer %}
